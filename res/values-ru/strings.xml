@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Github читатель</string>
+    <string name="action_settings">Settings</string>
+    <string name="vk_appID">5003421</string>
+     
+    <string name="question_text">Введите имя пользователя, чтобы узнать больше:</string>
+    <string name="edit_text"> GitHub  имя пользователя</string>
+    <string name="button_text">Узнать больше!</string>
+    
+    <string name="url_user_api">https://api.github.com/users/</string>
+    <string name="url_user_profile">https://github.com/</string>
+        
+    <string name="repositories">Repositories</string>
+    
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="language">Язык</string>
+    
+    <string name="add_user_DB">В БД добавлена запись id=@ID@</string>
+    <string name="update_user_DB">В БД изменена запись id=@ID@</string>
+    
+    <string name="warning">Внимание</string>
+    <string name="no_internet_connection">Отсутствует интернет-соединение. Пожалуйста, проверьте WiFi или мобильный интернет и попробуйте еще раз</string>
+    
+    <string name="user_not_found">Пользователь \'@LOGIN@\' не найден, попробуйте ввести другой :( </string>
+    <string name="oops">Ой!</string>
+    
+</resources>

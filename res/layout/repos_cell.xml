@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_repos_cell"
+    android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center" >
+            
+            <TextView
+                android:id="@+id/reposTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                style="@style/CustomFontStyle" />
+
+	        <TextView
+	            android:id="@+id/reposLang"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/reposTitle"
+	            style="@style/CustomFontStyle"	            
+            	android:textSize="26sp" />
+
+        </RelativeLayout>  
+
+        <TextView
+            android:id="@+id/reposCountForks"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/reposCountStars"
+            android:background="@drawable/bg_forks"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            style="@style/CustomFontStyle" />
+        
+        <TextView
+            android:id="@+id/reposCountStars"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_stars"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            style="@style/CustomFontStyle" />
+  
+</RelativeLayout>
+

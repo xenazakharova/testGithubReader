@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parallax.scroll.swipe.effect.ObservableScrollView 
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parallaxScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.roomorama.caldroid.CaldroidFragment" >
+
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"> 
+	      
+		<LinearLayout
+		    android:id="@+id/mainLinerLayout"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:orientation="vertical"
+		    android:background="@android:color/white" >
+		
+		    <RelativeLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_gravity="center" >
+		
+		        <TextView
+		            android:id="@+id/nameTextView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            style="@style/CustomFontStyle"
+		            android:focusable="true"
+	            	android:focusableInTouchMode="true" />
+		
+		        <TextView
+		            android:id="@+id/companyTextView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@+id/nameTextView"
+		            style="@style/CustomFontStyle" />
+		
+		    </RelativeLayout>
+		
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_marginBottom="10dp">
+		        
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignLeft="@+id/avatarRelativeLayout"
+		            android:layout_alignParentLeft="true"
+		            android:layout_gravity="center"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginRight="5dp"
+		            android:orientation="vertical" >
+		
+			        <TextView
+			            android:id="@+id/followersTextView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            style="@style/CustomFontStyle"
+			            android:layout_gravity="center" />
+			        
+			        <TextView
+			            android:id="@+id/followersLabelTextView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            style="@style/CustomFontStyle"
+			            android:layout_gravity="center"	            
+			            android:text="@string/followers"
+			            android:textSize="30sp"/>
+			        
+			         <ImageButton
+			             android:id="@+id/globeImageButton"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:layout_gravity="center"
+			             android:layout_marginTop="10dp"
+			             android:background="@null"
+			             android:src="@drawable/globe" />
+
+		        </LinearLayout>
+		        
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBottom="@color/blue"
+		            android:layout_alignParentRight="true"
+		            android:layout_alignRight="@+id/avatarRelativeLayout"
+		            android:layout_gravity="center"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginRight="5dp"
+		            android:orientation="vertical" >
+		
+			        <TextView
+			            android:id="@+id/followingTextView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            style="@style/CustomFontStyle"
+			            android:layout_gravity="center" />
+			        
+			         <TextView
+			            android:id="@+id/followingLabelTextView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            style="@style/CustomFontStyle"
+			            android:layout_gravity="center"	            
+			            android:text="@string/following" 
+			            android:textSize="30sp"/>
+			         
+			         <ImageButton
+			             android:id="@+id/shareImageButton"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:layout_gravity="center"
+			             android:layout_marginTop="10dp"
+			             android:background="@null"
+			             android:src="@drawable/share" />
+
+		        </LinearLayout>
+		        <com.xenazakharova.githubapi.ui.CircularImageView
+		            android:id="@+id/avatarImageView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"
+		            android:src="@drawable/github" 
+		            app:border_width="2dp"
+           			app:border_color="#515151" />
+		
+		    </RelativeLayout>
+		    
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center" >
+		
+		         <ImageButton
+		            android:id="@+id/saveImageButton"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="20dp"
+			        android:layout_marginRight="20dp"
+		            android:src="@drawable/save"
+		            android:background="@null" />
+		          
+		    </LinearLayout>
+		
+		</LinearLayout>
+	
+		 <ListView
+		     android:id="@+id/reposListView"
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_below="@+id/mainLinerLayout"
+		     android:layout_marginLeft="10dp"
+		     android:layout_marginRight="10dp"
+		     android:layout_marginBottom="10dp"
+		     android:layout_weight="1"
+		     android:divider="#ffffff"
+		     android:dividerHeight="10dp" >
+		     
+		 </ListView>
+	
+	</RelativeLayout>
+</parallax.scroll.swipe.effect.ObservableScrollView>
