@@ -7,6 +7,5 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="lib" path="D:/workspace/GithubApi/libs/picasso-2.5.2.jar"/>
 	<classpathentry kind="lib" path="D:/workspace/GithubApi/libs/VKOpenAuthActivity.jar"/>
-	<classpathentry kind="src" path="/112"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
